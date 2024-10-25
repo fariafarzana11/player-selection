@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Selection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body class="bg-gray-300">
+    <!-- navbar section -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="#" class="flex items-center space-x-5 rtl:space-x-reverse">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><i class="fa-brands fa-slack text-yellow-500"></i>Players</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 w-[700px] gap-12">
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <main>
+        <!-- banner section -->
+        <section class="w-full h-[700px] bg-gray-900">
+            <div class="grid grid-cols-2 gap-20 flex flex-col justify-center items-center">
+                <div>
+                    <h1 class="text-5xl text-yellow-500 font-bold text-center">World Most Valuable Players</h1>
+                    <p class="text-lg text-center text-white ml-20 mr-20 mt-5">There are the most demandable football player in the world. These value has so high. If you want to hier them, You have to pay big amount of money for them.</p>
+                    <button class="mt-5 ml-[350px] text-xl text-white bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-green-400 hover:to-blue-500 border-2 py-2 px-5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-1000 ">
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                     View More</button>
+                </div>
+                <div>
+                    <img src="./images/neymar.png" alt="" class="mt-[90px] ml-[100px] w-[400px]">
+                </div>
+            </div>
+        </section>
+
+        <!-- player section -->
+        <section class="w-10/12 ml-[120px] mt-5 pb-20">
+            <div class="flex grid-cols-2 gap-5">
+              <div class="grid grid-cols-3 gap-14">
+
+                <div class="rounded-lg shadow-lg bg-gray-500 h-fit w-[300px]" data-name="Lionel Messi">
+                  <a href="#!">
+                    <img class="rounded-t-lg h-3/5 w-full" src="images/messi.jpg" alt="">
+                  </a>
+                  <h5 class="text-slate-200 text-2xl font-bold mt-2 ml-5">Lionel Messi</h5>
+                  <p class="ml-5 text-lg text-slate-200">36 Goals . 120 Assist</p>
+                  <div class="p-6 text-center">
+                    <button type="button" class="btn btn-primary bg-gray-900 px-12 py-3 font-bold text-white rounded-lg players" onclick="addToPlayer(this)">Select</button>
+                  </div>
+                </div>
+                <div class="rounded-lg shadow-lg bg-gray-500 h-fit w-[300px]" data-name="Andres">
+                  <a href="#!">
+                    <img class="rounded-t-lg h-3/5 w-full" src="images/andres.jpg" alt="">
+                  </a>
+                  <h5 class="text-slate-200 text-2xl font-bold mt-2 ml-5 players-name">Andres</h5>
+                  <p class="ml-5 text-lg text-slate-200">36 Goals . 120 Assist</p>
+                  <div class="p-6 text-center">
+                    <button type="button" class="btn btn-primary bg-gray-900 px-12 py-3 font-bold text-white rounded-lg players" onclick="addToPlayer(this)">Select</button>
+                  </div>
+                </div>
+                <div class="rounded-lg shadow-lg bg-gray-500 h-fit w-[300px]" data-name="Mbpappe">
+                  <a href="#!">
+                    <img class="rounded-t-lg h-3/5 w-full" src="images/mbpappe.jpeg" alt="">
+                  </a>
+                  <h5 class="text-slate-200 text-2xl font-bold mt-2 ml-5">Mbpappe</h5>
+                  <p class="ml-5 text-lg text-slate-200">36 Goals . 120 Assist</p>
+                  <div class="p-6 text-center">
+                    <button type="button" class="btn btn-primary bg-gray-900 px-12 py-3 font-bold text-white rounded-lg" onclick="addToPlayer(this)" >Select</button>
+                  </div>
+                </div>
+                <div class="rounded-lg shadow-lg bg-gray-500 h-fit w-[300px]" data-name="Sadio Mene">
+                  <a href="#!">
+                    <img class="rounded-t-lg h-3/5 w-full" src="images/mene.jpg" alt="">
+                  </a>
+                  <h5 class="text-slate-200 text-2xl font-bold mt-2 ml-5">Sadio Mene</h5>
+                  <p class="ml-5 text-lg text-slate-200">36 Goals . 120 Assist</p>
+                  <div class="p-6 text-center">
+                    <button type="button" class="btn btn-primary bg-gray-900 px-12 py-3 font-bold text-white rounded-lg" onclick="addToPlayer(this)" >Select</button>
+                  </div>
+                </div>
+                <div class="rounded-lg shadow-lg bg-gray-500 h-fit w-[300px]" data-name="Eden Hazard">
+                  <a href="#!">
+                    <img class="rounded-t-lg h-3/5 w-full" src="images/eden.jpg" alt="">
+                  </a>
+                  <h5 class="text-slate-200 text-2xl font-bold mt-2 ml-5">Eden Hazard</h5>
+                  <p class="ml-5 text-lg text-slate-200">36 Goals . 120 Assist</p>
+                  <div class="p-6 text-center">
+                    <button type="button" class="btn btn-primary bg-gray-900 px-12 py-3 font-bold text-white rounded-lg" onclick="addToPlayer(this)" >Select</button>
+                  </div>
+                </div>
+                <div class="rounded-lg shadow-lg bg-gray-500 h-fit w-[300px] " data-name="Paul Pogba">
+                  <a href="#!">
+                    <img class="rounded-t-lg h-3/5 w-full" src="images/pogba.jpg" alt="">
+                  </a>
+                  <h5 class="text-slate-200 text-2xl font-bold mt-2 ml-5">Paul Pogba</h5>
+                  <p class="ml-5 text-lg text-slate-200">36 Goals . 120 Assist</p>
+                  <div class="p-6 text-center">
+                    <button type="button" class="btn btn-primary bg-gray-900 px-12 py-3 font-bold text-white rounded-lg" onclick="addToPlayer(this)" >Select</button>
+                  </div>
+                </div>     
+              </div>
+              <!-- CART Selected player part -->
+              <div class="grid grid-cols-1 ml-[120px]">
+                <div class="rounded-lg shadow-lg bg-gray-700  text-center p-4 selected">
+                  <h1 class="text-2xl text-white">Selected - <span id="total-select">0</span>
+                  </h1>
+                  <hr>
+                  <div class="p-6 text-center">
+                    <h5 class="text-2xl font-bold mb-2">
+                      <ol type="1" id="players-cart">
+      
+                      </ol>
+                    </h5>
+                  </div>
+                </div>
+      
+                <!-- Budget part  -->
+                <div class="bg-gray-700 text-center text-black budget p-5 rounded-lg mt-32 w-[400px]">
+                  <h1 class="text-2xl text-white">Player Budget</h1>
+                  <hr>
+                  <div class="grid grid-cols-2 mt-2 text-center">
+                    <h2 class="inline text-white">Per Player</h2>
+                    <input id="per-player-field" no-special-character="^[0-9-]*$" tabindex="0" ng-model="registrationField.mobilenumber" class="text-right px-2 py-1 w-full">
+                    <div class="px-12 py-6 w-5">
+                      <button id="btn-calculate" class="bg-gray-900 text-white rounded p-3 w-[130px] ml-[90px] calculator">Calculate</button>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 ml-4">
+                    <h2 class="inline text-white">Player Expenses</h2>
+                    <h2 class="text-white">$<span id="player-expenses">00</span></h2>
+                  </div>
+                  <div class="grid grid-cols-2 mt-4 text-center">
+                    <h2 class="inline text-white">Manager</h2>
+                    <input id="manager-field" no-special-character="^[0-9-]*$" tabindex="0" ng-model="registrationField.mobilenumber" class="text-right px-2 py-1 w-full">
+                  </div>
+                  <div class="grid grid-cols-2 mt-2 text-center">
+                    <h2 class="inline text-white">Coach</h2>
+                    <input id="coach-field" no-special-character="^[0-9-]*$" tabindex="0" ng-model="registrationField.mobilenumber" class="text-right  px-2 py-1 w-full">
+   
+                    <div class="px-2 py-5 w-[280px]">
+                      <button id="btn-calculate-total" class="bg-gray-900 text-white rounded p-3  ml-[120px] calculator">Calculate Total</button>
+                    </div>
+      
+                  </div>
+                  <div class="grid grid-cols-2 ml-4">
+                    <h2 class="inline text-white">Total</h2>
+                    <h2 class="text-white">$<span id="total">00</span></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p class="text-center">Copyright &copy; 2022 All Rights Reserved.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
